@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "提示词优化助手",
+  "version": "1.0.0",
+  "description": "一键优化您的AI提示词，让AI更好地理解您的需求",
+  "permissions": [
+    "storage",
+    "clipboardWrite",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "minimum_chrome_version": "88",
+  "browser_specific_settings": {
+    "edge": {
+      "browser_action_next_to_address_bar": true
+    }
+  }
+} 

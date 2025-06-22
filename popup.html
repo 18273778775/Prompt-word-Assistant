@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>提示词优化助手</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>提示词优化助手</h2>
+    <div class="input-section">
+      <textarea id="promptInput" placeholder="请输入你的Prompt..."></textarea>
+      <input id="tagInput" type="text" placeholder="添加标签（用逗号分隔）" />
+      <select id="categorySelect">
+        <option value="">选择分类</option>
+        <option value="写作">写作</option>
+        <option value="代码">代码</option>
+        <option value="总结">总结</option>
+      </select>
+      <div class="button-group">
+        <button id="copyBtn">一键复制</button>
+        <button id="saveBtn">保存</button>
+      </div>
+    </div>
+    <div class="template-section">
+      <h3>优质模版库</h3>
+      <ul id="templateList"></ul>
+    </div>
+    <div class="saved-section">
+      <h3>已保存Prompt</h3>
+      <ul id="savedPromptList"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

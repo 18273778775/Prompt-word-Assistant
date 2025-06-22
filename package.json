@@ -1,0 +1,11 @@
+{
+  "name": "prompt-optimizer",
+  "version": "1.0.0",
+  "description": "提示词优化助手浏览器插件",
+  "scripts": {
+    "generate-icons": "node scripts/generate-icons.js"
+  },
+  "dependencies": {
+    "svgexport": "^0.4.3"
+  }
+} 
